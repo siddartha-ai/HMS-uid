@@ -1,0 +1,65 @@
+[
+    {
+        "id": 1,
+        "name": "Complete Blood Count",
+        "price": 369,
+        "discount": 569,
+        "image": "../../assets/images/blood-studies.webp"
+    },
+    {
+        "id": 2,
+        "name": "Lipid Profile",
+        "price": 869,
+        "discount": 1069,
+        "image": "../../assets/images/heart.webp"
+    },
+    {
+        "id": 3,
+        "name": "Vitamin D - 25 Hydroxy (D2 + D3)",
+        "price": 1669,
+        "discount": 2500,
+        "image": "../../assets/images/joint-pain.webp"
+    },
+    {
+        "id": 4,
+        "name": "Complete Urine Examination",
+        "price": 300,
+        "discount": 416,
+        "image": "../../assets/images/kidney.webp"
+    },
+    {
+        "id": 5,
+        "name": "Liver Function Test",
+        "price": 869,
+        "discount": 1069,
+        "image": "../../assets/images/liver.webp"
+    },
+    {
+        "id": 6,
+        "name": "Thyroid Profile - Free (FT3,FT4,TSH)",
+        "price": 1000,
+        "discount": 1333,
+        "image": "../../assets/images/thyroid.webp"
+    },
+    {
+        "id": 7,
+        "name": "Renal Profile",
+        "price": 969,
+        "discount": 1206,
+        "image": "../../assets/images/blood-studies.webp"
+    },
+    {
+        "id": 8,
+        "name": "Creatinine , Serum",
+        "price": 269,
+        "discount": 369,
+        "image": "../../assets/images/blood-studies.webp"
+    },
+    {
+        "id": 9,
+        "name": "HbA1c , Glycate Hemoglobin",
+        "price": 669,
+        "discount": 916,
+        "image": "../../assets/images/diabetes.webp"
+    }
+]

@@ -1,0 +1,365 @@
+*{
+    margin:0; 
+    padding:0;
+    box-sizing: border-box;
+    outline: none; 
+    border:none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition:all .2s linear;
+    font-family: "Inter", sans-serif;
+    
+}
+
+
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 7%;
+    width: 100%;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+    z-index: 1000;
+    background-color: white;
+
+}
+.logo{
+    width: 150px;
+    display: flex;
+}
+.logo img{
+    width: 100%;
+}
+.navbar a{
+    color: var(--textcolor);
+    font-size: 1.7rem;
+    margin: 1rem;
+    position: relative;
+    transition: 0.5s;
+}
+.navbar a:hover{
+    color: var(--maincolor);
+}
+
+.navbar a::after{
+    content: "";
+    background-color: var(--maincolor);
+    width: 0;
+    position: absolute;
+    height: 0.2rem;
+    left: 0;
+    margin-top: 0.5rem;
+    top: 100%;
+    transition: 0.5s;
+}
+.navbar a:hover::after{
+    width: 100%;
+}
+
+#menu-bars{
+    color: #4A5764;
+    font-size: 2.5rem;
+    cursor: pointer;
+    margin-right: 1rem;
+    display: none;
+}
+#menu-bars:hover{
+    color: #2ec8a6;
+}
+
+.right-icons .btn{
+
+    padding: 1.2rem 2rem;
+    font-size: 1.7rem;
+    background: #2ec8a6;
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+}
+.right-icons .btn:hover{
+    background-color: #f8a803;
+}
+
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    scroll-padding-top: 6rem;
+}
+
+#menu-bars:hover{
+    color: #827e07;
+}
+
+.main-home{
+    padding: 2rem 7%;
+    width: 100%;
+    height: 90.249vh;
+    background-image: url("../images/abstract-blur-hospital-clinic-interior.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.home{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 6rem;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+.home .home-left-content{
+    flex: 1 1 40rem;
+}
+
+.home-left-content span{
+    font-size: 2rem;
+    color: #827e07;
+    padding: 1rem 0;
+    font-weight: bolder;
+}
+.home-left-content h2{
+    font-size: 48px;
+    margin: 1rem 0;
+    
+}
+.home-left-content p{
+    font-size: 1.7rem;
+    line-height: 3rem;
+}
+
+
+
+.home .home-right-content{
+    flex: 1 1 50rem;
+}
+
+.home .home-right-content img{
+    width: 100%;
+    margin-top: 4rem;
+}
+.explore{
+    margin-top: 20px;
+    padding-left: 35rem;
+    font-size: 15px;
+}
+.learn{
+    padding-left: 40rem;
+    font-size: 18px;
+}
+.doctor{
+    margin-top: 25px;
+    margin-left: 30px;
+    border-radius: 20px;
+    height: 600px;
+    width: 600px;
+}
+.alltypes{
+    display: flex;
+}
+.ctgry{
+    display: flex;
+    width: 540px;
+    height: 390px;
+    margin-top: 65px;
+    margin-left: 200px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.col {
+    margin: 4px; 
+    height: 120px;
+    width: 120px;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+    display: flex; 
+    justify-content: center;
+    align-items: center; 
+}
+.col:hover{
+    box-shadow: 0px 0px 10px 0px rgba(228, 152, 12, 0.9);
+}
+.centreimg{
+    text-align: center;
+}
+.lastcentre{
+    display: flex;
+}
+
+
+/* info */
+.info{
+    margin-top: 30px;
+    height: 700px;
+    display: flex;
+    background-color: rgb(185, 235, 241);
+}
+.content{
+    width:700px;
+    margin-left: 20px;
+}
+.contentimg1{
+    margin-top: 50px;
+    order: 2;
+    height: 600px;
+    width: 520px;
+    border-radius: 20px;
+}
+.choose{
+    padding-top: 25px;
+}
+.choosehead{
+    font-size: 15px;
+    margin-top: 20px;
+    margin-bottom: 15px;
+}
+.choosepara{
+    font-size: 15px;
+}
+.logo{
+    margin-top: 14px;
+    display: flex;
+    justify-content: space-around;
+    
+    align-items: center;
+}
+.logobox{
+    display: flex;
+    width: 250px;
+    margin-bottom: 3px;
+    display: flex;
+}
+.logoimg{
+    height: 70px;
+    width:90px;
+    margin-top: 45px;
+    margin-left: 10px;
+    margin-right: 20px;
+    margin-bottom: 60px;
+    justify-content: space-around;
+}
+
+.logodata{
+    font-size: 29px;
+    margin-top: 50px;
+    color: #827e07;
+}
+
+.logo2{
+    margin-left: 70px;
+}
+
+.pa{
+    font-size: 13px;
+    margin-left: 5px;
+}
+
+.main-footer{
+    padding: 4rem 7%;
+    height:520px;
+    background-color: #4A5764;
+}
+.footer-inner{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.footer-content{
+    height:490px;
+    flex: 1 1 180px;
+    text-align: center;
+}
+.footer-content h1{
+    color: white;
+    font-size: 25px;
+}
+#position1{
+    margin-top: 28.7px;
+}
+#position4{
+    margin-top: 28.5px;
+}
+#position5{
+    margin-top: 28.5px;
+}
+.link a{
+    display: block;
+    text-align: center;
+    color: white;
+    font-size: 1.5rem;
+    padding: 1rem;
+    margin: 0.5rem;
+}
+.border{
+    border-bottom: 2px solid orange;
+}
+.linkcolor:hover{
+    color:yellow;
+}
+
+
+@media (max-width:768px) {
+
+    html{
+        font-size: 55%;
+    }
+
+    .right-icons{
+        display: flex;
+        align-items: center;
+    }
+
+    #menu-bars{
+        
+        display: initial;
+    }
+
+    header{
+        padding: 2rem;
+        background-color: white;
+    }
+
+    .navbar{
+        position: absolute;
+        top: 100%;
+        left: -100%;
+        height: 100vh;
+        width: 100%;
+        background-color: white;
+    }
+    .navbar.active{
+        left: 0;
+    }
+    .navbar a{
+        display: block;
+        margin: 2rem;
+        padding: 1rem;
+        border: 1px solid var(--textcolor);
+    }
+
+    .home .home-left-content{
+        margin-top: 50px;
+        padding: 2rem;
+    }
+
+    .home .home-left-content h2{
+        font-size: 30px;
+    }
+    .main-technology{
+        
+        margin-top: 0;
+    }
+
+    .about-right-content h2{
+        font-size: 20px;
+    }
+    
+}

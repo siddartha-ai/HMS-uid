@@ -1,0 +1,13 @@
+{
+  "name": "medical-theme-website",
+  "version": "1.0.0",
+  "description": "Medical Theme Website restructured as an Electron.js desktop application",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "dev": "electron ."
+  },
+  "devDependencies": {
+    "electron": "^31.0.0"
+  }
+}

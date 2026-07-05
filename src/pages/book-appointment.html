@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../../assets/css/book-appointment.css">
+</head>
+<body>
+    <header>
+        
+        <div class="logo"><img src="../../assets/images/logo3.png" alt=""></div>
+
+        <nav class="navbar">
+            <a href="index.html">Home</a>
+            <a href="labs.html">Lab Records</a>
+            <a href="buy-medicines.html">Buy Medicines</a>
+            <a href="find-hospitals.html">Find Hospitals</a>
+            <a href="#review-heading">Reviews</a>
+            
+        </nav>
+
+        <div class="right-icons">
+            <div id="menu-bars" class="fas fa-bars"></div>
+            <div class="btn"><a href="book-appointment.html">Make Appointment</a> </div>
+        </div>
+
+    </header>
+
+
+    <div id="slideshow">
+        <div id="imageContainer">
+          <div class="imagediv">
+            <div class="slide"><img class="slide1" src="../../assets/images/appform1.png" alt="Image 1"><div class="slideimgcont"><h1>Doctors Have A <br> Big Responsibility To <br> Bring Smiles On <br> The Faces Of <br> Suffering Humanity.</h1></div></div>
+          <div class="slide"><img class="slide1" src="../../assets/images/appform2.png" alt="Image 2"><div class="slideimgcont"><h1>There are only <br> two sorts of <br> doctors: those who <br> practice with their <br> brains, and those <br> who practice with <br> their tongues.</h1></div></div>
+          <div class="slide"><img class="slide1" src="../../assets/images/appform3.png" alt="Image 3"><div class="slideimgcont"><h1>Medicines Can Cure <br> The Diseases But <br> Only Doctors Can <br> Cure Patients.</h1></div></div>
+          </div>
+        </div>
+        <div id="arrowLeft" class="arrow" onclick="moveImages('left')">&lt;</div>
+        <div id="arrowRight" class="arrow" onclick="moveImages('right')">&gt;</div>
+      </div>
+
+    <form name="myforms" class="forms" onsubmit="openpopup(event)">
+        <div class="main">
+            <div class="names">
+                <label for="name" id="op" class="required">Name </label> :<br/><br/>
+                <div id="name2">
+                    <label class="required">Phone No.</label> :
+                </div>
+                <div id="name3">
+                    <label class="required" >Age </label> :
+                </div>
+                <div id="name4">
+                    <label  class="required" name="mail">Email </label> :
+                </div>
+                <div id="name5">
+                    <label  class="required">Date Of Birth </label> :
+                </div>
+                <div id="name6">
+                    <label class="required">Blood group </label> :
+                </div>
+                <div id="name7">
+                    <label class="required">Slot</label> :
+                </div>
+                <div id="name8">
+                    <label >Alt phone number :</label>
+                </div>
+                <div id="name9">
+                    <label class="required">Symptoms </label> :
+                </div>
+                <div class="btn">
+                    <button type="submit">Submit</button>
+                </div>
+            </div>
+            
+        <div class="inputs">
+            <input type="text" name="Name" placeholder="Full Name" id="nameInput"><br/><br/>
+            <input type="tel" placeholder="000-000-0000"><br/><br/>
+            <input type="number" min="1" required><br/><br/>
+            <input type="email" id="emailInput"><br/><br/>
+            <input type="date"><br/><br/>
+            <input type="text"><br/><br/>
+            <input type="time" ><br/><br/>
+            <input type="tel" placeholder="000-000-0000"><br/><br/>
+            <textarea id="symptoms" required rows="5"></textarea><br/><br/>
+        </div>
+        </div>
+    </form>
+
+
+    <div id="successPopup" class="popup">
+        <div class="popup-content">
+          <span class="close">&times;</span>
+          <p>Successfully Submitted!</p>
+        </div>
+      </div>
+
+      <div class="popup" id="popup">
+        <img src="../../assets/icons/tick.png" alt="tick">
+        <h2>Thank You!</h2>
+        <p>Your details has been successfully submitted. Thanks!</p>
+        <button type="button" onclick="closepopup()">OK</button>
+      </div>
+
+      <div class="main-footer">
+        <div class="footer-inner">
+            <div class="footer-content">
+                <div id="position1">
+                    <h1 class="border">Patient care</h1>
+                    <div class="link">
+                        <a class="linkcolor" href="">Find A Doctor</a>
+                        <a class="linkcolor" href="">Medical Services</a>
+                        <a class="linkcolor" href="">Patient Testimonials</a>
+                        <a class="linkcolor" href="">Value Added Services</a>
+                        <a class="linkcolor" href="">Pay Online</a>
+                    </div>
+                </div>
+            </div>
+    
+    
+            <div class="footer-content">
+                <div id="position2">
+                    <h1 class="border">Centre Of Excellence</h1>
+                    <div class="link">
+                        <a class="linkcolor" href="">Cardiology</a>
+                        <a class="linkcolor" href="">Orthopaedics</a>
+                        <a class="linkcolor" href="">Pulmanology</a>
+                        <a class="linkcolor" href="">Gastroenterology</a>
+                        <a class="linkcolor" href="">Organ Transplantation</a>
+                        <a class="linkcolor" href="">Gynecology</a>
+                        <a class="linkcolor" href="">Ear,Nose and Throat</a>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="footer-content">
+                <div id="position3">
+                    <h1 class="border">Medical Procedures</h1>
+                    <div class="link">
+                        <a class="linkcolor" href="">Proton Theory For Cancer Treatment</a>
+                        <a class="linkcolor" href="">Cosmetic And Plastic Surgery</a>
+                        <a class="linkcolor" href="">Bone Marrow Tranplant</a>
+                        <a class="linkcolor" href="">G Scan-Open Standing MRI SCan</a>
+                        <a class="linkcolor" href="">Knee Replacement Surgery</a>
+                        <a class="linkcolor" href="">Cochlear Implant Surgery</a>
+                        <a class="linkcolor" href="">Hand MicroSurgery</a>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="footer-content">
+                <div id="position4">
+                    <h1 class="border">Blogs</h1>
+                    <div class="link">
+                        <a class="linkcolor" href="">Health Library</a>
+                        <a class="linkcolor" href="">COVID-19 Updates</a>
+                        <a class="linkcolor" href="">COVID-19 FAQS</a>
+                        <a class="linkcolor" href="">COVID-19 Vaccination</a>
+                        <a class="linkcolor" href="">COVID-19 New Symptoms</a>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="footer-content">
+                <div id="position5">
+                    <h1 class="border">Contact Us</h1>
+                    <div class="link">
+                        <a class="linkcolor" href="">Post A Query</a>
+                        <a class="linkcolor" href="">Consult Doctor Online</a>
+                        <a class="linkcolor" href="">Book Physical Appointment</a>
+                        <a class="linkcolor" href="">Give Your Feedback</a>
+                        <a class="linkcolor" href="">Doctery Lifeline</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="../renderer/book-appointment.js"></script>
+</html>

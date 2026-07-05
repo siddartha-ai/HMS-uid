@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product List</title>
+    <style>
+         .navbar img{
+            width: 50px;
+            height: 50px;
+            border: 2px solid;
+            border-radius: 600px;
+            padding: 5px;
+        }
+        .logo{
+            display: flex;   
+            align-items: center;
+        }
+       #input-box{
+        margin: 20px;
+        width: 600px;
+        padding: 5px 10px;
+        margin-left: 400px;
+        border: 1px solid;
+        border-radius: 20px;
+        height: 40px;
+    }
+    .dropdown {
+        position: relative;
+        display: inline-block;
+    }
+    .dropdown-content{
+        display: flex;
+        position:absolute;
+        background-color: rgb(249, 249, 249);
+        min-width: 600px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+        margin-left: 400px;
+    }
+    .dropdown-content ul{
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        width: 560px;     
+    }
+    .dropdown-content li{
+        padding: 0px;
+        margin: 10px;
+        cursor: pointer;
+    }
+    .dropdown-content li:hover{
+        background-color: rgb(213, 204, 204);
+        height: 22px;
+    }
+    .dropdown-content li:last-child{
+        border-bottom: none;
+    }
+    .dropdown:hover.dropdown-content {
+        display: block;
+    }    
+    svg{
+        width: 34px;
+        height: 35px;
+    }
+    .icon-cart{
+        position: relative;
+        margin-left: 200px;
+        cursor: pointer;
+    }
+    .icon-cart span{
+        display: flex;
+        width: 20px;
+        height: 20px;
+        background-color: red;
+        justify-content: center;
+        align-items: center;
+        color: aliceblue;
+        border-radius: 50%;
+        position: absolute;
+        top: 50%;
+        right: -30%;
+    }
+    .Lists{
+            list-style: none;
+            text-align: center;
+            display: flex;
+            flex-direction: row;
+            margin:7px;
+            margin-left: 100px;
+        }
+        .Lists li a{
+            text-decoration: none;            
+        }
+        .L1{
+            padding: 6px;   
+        }
+        .L2{
+            padding: 6px;
+            margin-left: 250px;
+            margin-right: 200px;
+        }
+        .L3{
+            padding: 6px;
+        }
+        
+        .L4{
+            padding: 6px;
+            margin-left: 200px;
+        }
+        #list{
+            border: 1px solid lightblue;
+            border-radius: 5px;
+            display: none;  
+        }
+        #list{
+            display: flex;
+            flex-direction: column;
+            text-decoration: none;
+            padding: 5px 20px;
+            color: black;
+        }
+        .listProduct{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 100px;
+        padding: 30px;
+    }
+    .item img{
+        width: 30%;
+        height:110px;
+        filter: drop-shadow(0px 5px 5px rgba(16, 15, 15, 0.6));
+        border: 2px solid rgb(154, 114, 114);
+        border-radius: 20px;
+    }
+    .listProduct{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 100px;
+        padding: 30px;
+    }
+    .item {
+        display: flex;
+        width: 350px;
+        background-color:#f1f1c4;
+        padding: 20px;
+        border-radius: 20px;
+    }
+    .listProduct .item:nth-child(even){
+        background-color: rgb(137, 137, 206);
+    }
+    .item h2{
+        font-weight: 5000;
+        font-size: 20px;
+        margin: 20px;    
+    }
+    .item p{
+        letter-spacing: 1px;
+        font-size: large;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        margin: 10px;
+        margin-top: -10px;
+        margin-left: 30px;
+        color: rgb(1, 1, 1);
+    }
+    .item .discount{
+        font-size: smaller;
+        text-decoration: line-through;
+        margin: 2px;
+        margin-left:-5px ;
+        margin-top: -7px;
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        color: rgb(75, 81, 78);
+        letter-spacing: 1px;
+    }
+    .P{
+        display: flex;
+    }
+    #Save{
+        font-size: 17px;
+        margin: 1px;
+        margin-top: -10px;
+        margin-left: 3px;
+        color: rgb(29, 236, 10);
+    }
+    .item button{
+        background-color: rgb(35, 32, 32);
+        color: rgb(253, 253, 253);
+        padding: 5px 10px;
+        border-radius: 20px;
+        margin: 10px;
+        margin-left: 50px;
+        border: 2px solid;
+        cursor: pointer;
+    }
+    .item button:hover{
+        background-color: rgb(121, 116, 116);
+        transition: 500ms ;
+    }
+    .item button:active{
+        transform: translate(0px,5px);
+    }
+    
+    .cartTab{
+        width: 400px;
+        background-color: rgb(45, 40, 40);
+        color: white;
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        display: grid;
+        grid-template-rows:70px 1fr 70px; 
+    }
+    .cartTab h1{
+        padding: 20px;
+        margin:0;
+        font-weight: 300;
+    }
+    .btn{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .btn button{
+        background-color: rgb(220, 190, 22);
+        border: none;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        cursor: pointer;
+        border: 2px solid white;
+        border-radius: 40px;
+        width: 150px;
+        height: 50px;
+        margin-bottom: 10px;
+        margin-left: 40px;
+    }
+    .cartTab .btn .close{
+        background-color: rgb(137, 147, 155);
+        border: 2px solid rgb(255, 255, 255);
+        border-radius: 40px;
+    } 
+    .btn :active{
+        transform: translate(0px,5px);
+    }
+    .cartTab {
+    width: 413px;
+    background-color: rgb(45, 40, 40);
+    color: rgb(236, 225, 225);
+    position: fixed;
+    inset: 0 -420px 0 auto;
+    overflow: auto;
+    display: grid;
+    grid-template-rows: 80px 1fr 60px;
+    transition: 0.5s;
+}
+.showCart .cartTab {
+    inset: 0 0 0 auto;
+}
+.showCart .listProduct{
+    transform: translateX(-250px);
+}
+.cartTab .listCart .Item img{
+    width: 70%;
+    background-color: #f1f1c4;
+    border-radius: 50px;
+}
+.cartTab .listCart .Item{
+    display: grid;
+    grid-template-columns: 70px 150px 50px 1fr;
+    gap: 10px;
+    text-align: center;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.listCart .quantity span{
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    background-color: white;
+    color: rgb(15, 14, 14);
+    border-radius: 50%;
+    cursor: pointer;
+}
+.listCart .quantity span:nth-child(2){
+    background-color: transparent;
+    color: white;
+}
+.listCart .Item:nth-child(even){
+    background-color: rgb(74, 70, 70);
+    border-radius: 20px;
+}
+.listCart{
+    overflow: auto;
+}
+.listCart::-webkit-scrollbar{
+    width: 0;
+}
+
+.totalAmount{
+    font-size: 20px;
+    text-align: center;
+    font-style: italic;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    
+}
+ 
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <a href="index.html">
+                <img src="https://i.pinimg.com/736x/2e/02/bf/2e02bf2de46b5cbddf3cfbc16e83e822.jpg" alt="logo">
+            </a>
+            <div class="dropdown">
+                <input type="search" id="input-box" placeholder="Search for lab tests" autocomplete="off">
+                <div class="dropdown-content"></div>
+            </div>
+            <div class="icon-cart">
+                <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 4h1.5L9 16m0 0h8m-8 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4Zm8 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4Zm-8.5-3h9.25L19 7H7.312"/>
+                </svg>
+                <span>0</span>
+            </div>
+        </div>
+        <hr>
+        <ul class="Lists">
+            <div class="L1"><li><a href="buy-medicines.html">Buy Medicines</a></li></div>
+            <div class="L2"><li><a href="find-hospitals.html">Find Hospitals</a></li></div>
+            <div class="L3"><li><a href="book-appointment.html">Find Doctors</a></li></div>
+            <div class="L4"><li><a href="labs.html">Labs</a></li></div>
+        </ul>
+    </nav>
+    <hr style="box-shadow: 1px 1px 5px rgb(135, 132, 132);">
+    <br><br>
+    <div class="listProduct" id="product-container">
+        <div class="item">
+            <img src="../../assets/images/blood-studies.webp" alt="blood">
+            <div class="text"><h2>Complete Blood Count</h2>
+             <div class="P"><p><b>&#8377 369 </b></p>
+             <p class="discount">(&#8377 569)</p>
+            <p id="Save">Save 20%</p></div>
+            <button class="addCart">Add To Cart</button>
+        </div>
+        </div>
+    </div>
+    <div class="cartTab">
+        <h1>Shopping Cart</h1>
+        <div class="listCart">
+            <div class="Item">
+                
+            </div>
+        </div>
+        <div class="totalAmount"></div>
+        <div class="btn">
+            <button class="close">CLOSE</button>
+            <button class="checkOut">PAYMENT</button>
+        </div>
+    </div>
+    <script src="../renderer/kidney.js"></script>
+    
+</body>
+</html>

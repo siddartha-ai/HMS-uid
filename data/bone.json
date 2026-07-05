@@ -1,0 +1,44 @@
+[
+    {
+        "id": 1,
+        "name": "Vitamin D (1,25 Dihydroxy Cholecalciferol)",
+        "price": 3999,
+        "discount": 5669,
+        "image": "../../assets/images/joint-pain.webp"
+    },
+    {
+        "id": 2,
+        "name": "Vitamin D- 25 Hydroxy(D2 + D3)",
+        "price": 1869,
+        "discount": 2569,
+        "image": "../../assets/images/joint-pain.webp"
+    },
+    {
+        "id": 3,
+        "name": "Full Body Checkup- Essential",
+        "price": 4269,
+        "discount": 5350,
+        "image": "../../assets/images/joint-pain.webp"
+    },
+    {
+        "id": 4,
+        "name": "Full Body Checkup Female - Advance",
+        "price": 5300,
+        "discount": 7116,
+        "image": "../../assets/images/joint-pain.webp"
+    },
+    {
+        "id": 5,
+        "name": "Vitamin Check",
+        "price": 3869,
+        "discount": 4569,
+        "image": "../../assets/images/joint-pain.webp"
+    },
+    {
+        "id": 6,
+        "name": "Erythroprotein (EPO)",
+        "price": 2300,
+        "discount": 3416,
+        "image": "../../assets/images/joint-pain.webp"
+    }
+]

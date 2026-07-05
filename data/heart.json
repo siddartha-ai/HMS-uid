@@ -1,0 +1,65 @@
+[
+    {
+        "id": 1,
+        "name": "Heart Panel",
+        "price": 999,
+        "discount": 1669,
+        "image": "../../assets/images/heart.webp"
+    },
+    {
+        "id": 2,
+        "name": "Lipid Profile",
+        "price": 1069,
+        "discount": 1569,
+        "image": "../../assets/images/heart.webp"
+    },
+    {
+        "id": 3,
+        "name": "Cholestrol",
+        "price": 269,
+        "discount": 350,
+        "image": "../../assets/images/heart.webp"
+    },
+    {
+        "id": 4,
+        "name": "Platelet Count",
+        "price": 300,
+        "discount": 116,
+        "image": "../../assets/images/heart.webp"
+    },
+    {
+        "id": 5,
+        "name": "Electrolytes",
+        "price": 869,
+        "discount": 1069,
+        "image": "../../assets/images/heart.webp"
+    },
+    {
+        "id": 6,
+        "name": "Alanine Aminotransferase",
+        "price": 300,
+        "discount": 416,
+        "image": "../../assets/images/heart.webp"
+    },
+    {
+        "id": 7,
+        "name": "Heart Check - Essential",
+        "price": 2500,
+        "discount": 3416,
+        "image": "../../assets/images/heart.webp"
+    },
+    {
+        "id": 8,
+        "name": "Heart Check - Advanced",
+        "price": 5300,
+        "discount": 7416,
+        "image": "../../assets/images/heart.webp"
+    },
+    {
+        "id": 9,
+        "name": "Sodium",
+        "price": 300,
+        "discount": 416,
+        "image": "../../assets/images/heart.webp"
+    }
+]

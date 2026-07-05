@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="../../assets/css/register.css">
+    </head>
+    <body>
+        <div class="back-page">
+            <div class="main-page">
+                <!--
+                    <div class="company-logo-conatiner">
+                        <img src="https://static.vecteezy.com/system/resources/previews/020/871/782/non_2x/health-doctor-logo-medical-care-business-vector.jpg" class="">
+                    </div>
+                -->
+                <h1 class="head">Registration</h1>
+                <form>
+                    <div class="form-background">
+                        <div class="div-form-general">
+                            <div class="name">
+                                <p>Name:</p>
+                                <input type="text" class="user-name" required/>
+                            </div>
+                            <div class="email">
+                                <p>Email:</p>
+                                <input type="email" class="email" required/>
+                            </div>
+                            <div class="ph-no">
+                                <p>Phone number:</p>
+                                <input type="text" class="ph-no" pattern="[0-9]{10}" maxlength="10" required/>
+                            </div>
+                            <div class="make-password">
+                                <p>Password:</p>
+                                <input type="password" class="password" required/>
+                            </div>
+                            <div class="confirm-password">
+                                <p>Confirm Password:</p>
+                                <input type="password" class="password2" required/>
+                            </div>
+                        </div>
+                        <div class="div-form-address">
+                            <div class="address1">
+                                <p>Address line 1</p>
+                                <input type="text" class="address1" required/>
+                            </div>
+                            <div class="address2">
+                                <p>Address line 2</p>
+                                <input type="text" class="address2" />
+                            </div>
+                            <div class="pin-code-num">
+                                <p>Pin Code</p>
+                                <input type="text" class="pin-code" pattern="[0-9]{6}" maxlength="6"required/>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="register-but-conatiner">
+                        <button class="js-resister-but"> <a href="index.html"> Sign in </a> </button>
+                    </div>
+                </form>
+                
+            </div>
+        </div>
+        <script type="module" src="../renderer/register.js"></script>
+    </body>
+</html>

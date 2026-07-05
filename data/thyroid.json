@@ -1,0 +1,37 @@
+[
+    {
+        "id": 1,
+        "name": "Thyroid Assessment",
+        "price": 469,
+        "discount": 669,
+        "image": "../../assets/images/thyroid.webp"
+    },
+    {
+        "id": 2,
+        "name": "Thyroid Stimulating Hormome (TSH)",
+        "price": 369,
+        "discount": 569,
+        "image": "../../assets/images/thyroid.webp"
+    },
+    {
+        "id": 3,
+        "name": "Thyroid Profile - Free (FT3,FT4,TSH)",
+        "price": 1069,
+        "discount": 2500,
+        "image": "../../assets/images/thyroid.webp"
+    },
+    {
+        "id": 4,
+        "name": "Free And Total Thyroid Profile",
+        "price": 1300,
+        "discount": 1416,
+        "image": "../../assets/images/thyroid.webp"
+    },
+    {
+        "id": 5,
+        "name": "Thyroid Assessment - Advance",
+        "price": 2869,
+        "discount": 3069,
+        "image": "../../assets/images/thyroid.webp"
+    }
+]

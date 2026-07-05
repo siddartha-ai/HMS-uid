@@ -1,0 +1,65 @@
+[
+    {
+        "id": 1,
+        "name": "Kidney Check- Basic",
+        "price": 499,
+        "discount": 669,
+        "image": "../../assets/images/kidney.webp"
+    },
+    {
+        "id": 2,
+        "name": "Kidney Check- Advance",
+        "price": 1669,
+        "discount": 2269,
+        "image": "../../assets/images/kidney.webp"
+    },
+    {
+        "id": 3,
+        "name": "Electrolytes - Serum",
+        "price": 669,
+        "discount": 850,
+        "image": "../../assets/images/kidney.webp"
+    },
+    {
+        "id": 4,
+        "name": "Anti Nuclear Anitoby (ANA)",
+        "price": 1300,
+        "discount": 1116,
+        "image": "../../assets/images/kidney.webp"
+    },
+    {
+        "id": 5,
+        "name": "Renal Function Test",
+        "price": 869,
+        "discount": 1069,
+        "image": "../../assets/images/kidney.webp"
+    },
+    {
+        "id": 6,
+        "name": "Urine Protein",
+        "price": 500,
+        "discount": 816,
+        "image": "../../assets/images/kidney.webp"
+    },
+    {
+        "id": 7,
+        "name": "Blood Urea Nitrogen",
+        "price": 250,
+        "discount": 316,
+        "image": "../../assets/images/kidney.webp"
+    },
+    {
+        "id": 8,
+        "name": "Amylase",
+        "price": 530,
+        "discount": 746,
+        "image": "../../assets/images/kidney.webp"
+    },
+    {
+        "id": 9,
+        "name": "Peripheral Smear",
+        "price": 300,
+        "discount": 416,
+        "image": "../../assets/images/kidney.webp"
+    }
+]
